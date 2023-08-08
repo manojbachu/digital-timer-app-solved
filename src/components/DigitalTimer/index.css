@@ -1,0 +1,141 @@
+/* Write your CSS here */
+/* Write your CSS here */
+.digital-timer-app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#ffffff, #cffcf1, #defafe);
+  font-family: 'Roboto';
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.container {
+  width: 100%;
+}
+
+.clock-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-position: center;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  background-size: cover;
+}
+
+.time-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 35px 25px 35px 25px;
+  border-radius: 50%;
+  font-family: 'Roboto';
+}
+
+.time {
+  margin: 0px;
+  color: #00d9f5;
+}
+
+.clock-status {
+  margin: 0px;
+  color: #0f172a;
+  font-weight: bold;
+}
+
+.start-or-pause-button {
+  font-family: 'Roboto';
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.controls-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.clock-controllers-container {
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.start-or-pause-img {
+  height: 30px;
+  margin-right: 8px;
+}
+
+.guideline {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.set-timer-limit-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 200px;
+  font-weight: bold;
+}
+
+.set-time-button {
+  background: none;
+  font-size: 36px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.time-limit {
+  background-image: linear-gradient(to right, #76e7cb, #cffcf1, #85f4f8);
+  padding: 12px 25px 12px 25px;
+  border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+  .digital-timer-app-container {
+    background-image: linear-gradient(to right, #ffffff, #cffcf1, #defafe);
+  }
+  .time-container {
+    padding: 45px 35px 45px 35px;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .clock-container {
+    background-size: cover;
+    margin-right: 8%;
+    height: 450px;
+    width: 600px;
+  }
+  .clock-controllers-container {
+    width: 100%;
+  }
+  .controls-container {
+    margin-right: 30px;
+    width: 30%;
+  }
+}
